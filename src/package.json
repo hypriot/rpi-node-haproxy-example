@@ -1,0 +1,10 @@
+{
+  "name": "node-hello-world",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Node.js Hello world app on docker",
+  "author": "hypriot.com",
+  "dependencies": {
+    "express": "4.12.0"
+  }
+}

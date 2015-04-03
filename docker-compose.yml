@@ -1,0 +1,30 @@
+weba:
+  build: .
+  expose:
+    - 80
+
+webb:
+  build: .
+  expose:
+    - 80
+
+webc:
+  build: .
+  expose:
+    - 80
+
+haproxy:
+  image: hypriot/rpi-haproxy
+  volumes:
+   - haproxy:/haproxy-override
+  links:
+   - weba
+   - webb
+   - webc
+  ports:
+   - "80:80"
+   - "70:70"
+
+  expose:
+   - "80"
+   - "70"
