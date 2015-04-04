@@ -1,4 +1,4 @@
-FROM hypriot/rpi-iojs:1.4.1
+FROM hypriot/rpi-iojs:1.6.3
 
 ADD src/ /src
 WORKDIR /src
