@@ -16,7 +16,7 @@ webc:
 haproxy:
   image: hypriot/rpi-haproxy
   volumes:
-   - haproxy:/haproxy-override
+   - ./haproxy:/haproxy-override
   links:
    - weba
    - webb
