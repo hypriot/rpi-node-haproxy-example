@@ -1,4 +1,4 @@
-FROM hypriot/rpi-node:0.12.0
+FROM arm32v7/node
 
 ADD src/ /src
 WORKDIR /src
